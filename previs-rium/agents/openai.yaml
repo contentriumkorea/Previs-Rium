@@ -1,0 +1,7 @@
+interface:
+  display_name: "Previs Rium"
+  short_description: "원본 영상의 구도와 동선을 옮긴 Blender 프리비즈와 씨댄스 프롬프트"
+  default_prompt: "Use $previs-rium to turn this reference video into a Blender previz that copies the original exactly (positions, spacing, crowd groups and gaps, motion, camera, cut timing) and follows the 빼기·표시·나누기 rules: give each subject that gets its own input image its own colour and put all other people in one shared colour. First show compare.mp4 (original | previz) inside Codex and ask once '고칠 곳이 있나요?'; apply fixes one at a time and change only the part I name (keep every other pose, path, turn and camera from the previous version; render with --prev and check the [original | previous | new] sheet), then do the final render and give me the previz.mp4 and the handoff: the finished prompts for Higgsfield web and Magnific (the canonical template in references/prompt_canon.md, filled in as is), the image upload order, the on-screen settings, the colour key and the sheet checklist. Show results inside Codex only — never open them with open, Preview or QuickTime."
+
+policy:
+  allow_implicit_invocation: true

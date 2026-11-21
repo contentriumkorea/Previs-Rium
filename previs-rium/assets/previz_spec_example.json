@@ -1,0 +1,41 @@
+{
+  "meta": {"title": "예시 — 모델이 제품을 들고 걸어와 멈춰 숙이고, 제품을 테이블에 놓는 9초 광고",
+           "version": "v1", "from_cuesheet": "02_큐시트/cuesheet.json",
+           "forbidden_colors": "바뀔 대상별 실제 색: 모델 = 피부·흰 셔츠·청바지 / 제품 = 갈색 병 / 큰 배경 = 베이지 벽 → 흰색·파랑·갈색·베이지 계열은 더미에 쓰지 않음"},
+  "render": {"width": 720, "height": 1280, "fps": 24, "duration": 9, "engine": "WORKBENCH"},
+  "palette": {"product": "magenta", "model": "purple"},
+  "world": {"floor": true, "set": [
+    {"id": "back_wall", "size": [8, 0.1, 3], "pos": [0, 2.5, 0]},
+    {"id": "table", "size": [1.2, 0.6, 0.74], "pos": [0, -1.1, 0]},
+    {"id": "pillar_landmark", "type": "landmark", "size": [0.4, 0.4, 2.6], "pos": [-1.8, 1.2, 0]}
+  ]},
+  "objects": [
+    {"id": "model", "kind": "person", "height": 1.70, "facing_marker": "auto",
+     "keys": [
+       {"t": 0.0, "pos": [0, 1.6, 0], "rot": 0, "bend": 0},
+       {"t": 3.0, "pos": [0, -0.3, 0], "rot": 0, "bend": 0, "ease": "out"},
+       {"t": 4.0, "pos": [0, -0.3, 0], "bend": 0},
+       {"t": 5.5, "pos": [0, -0.3, 0], "bend": 25},
+       {"t": 9.0, "pos": [0, -0.3, 0], "bend": 25}
+     ]},
+    {"id": "product", "kind": "product", "shape": "dirbox", "size": [0.07, 0.05, 0.16],
+     "follow": {"to": "model", "offset": [-0.12, -0.22, 0.30], "from": 0.0, "until": 5.99},
+     "keys": [{"t": 6.0, "pos": [0.1, -1.1, 0.74]}, {"t": 9.0, "pos": [0.1, -1.1, 0.74]}]}
+  ],
+  "cuts": [
+    {"id": "C1", "start": 0.0, "end": 3.0,
+     "camera": {"move": "트래킹 뒤로 빠지며 따라감", "target": "model", "look_offset": [0, 0, 1.3], "follow": true,
+                "from": {"az": 0, "dist": 3.2, "h": 1.5, "lens": 35},
+                "to": {"az": 0, "dist": 2.6, "h": 1.45, "lens": 35}, "ease": "linear"}},
+    {"id": "C2", "start": 3.0, "end": 6.0,
+     "camera": {"move": "모델 오른쪽으로 60° 오빗", "target": "model", "look_offset": [0, 0, 1.2],
+                "keys": [{"t": 3.0, "az": -20, "dist": 2.2, "h": 1.4, "lens": 50},
+                         {"t": 4.5, "az": 15, "dist": 2.0, "h": 1.38, "lens": 50},
+                         {"t": 6.0, "az": 40, "dist": 1.9, "h": 1.35, "lens": 50}]}},
+    {"id": "C3", "start": 6.0, "end": 9.0,
+     "camera": {"move": "제품으로 천천히 푸시인, 끝은 아주 느리게 계속", "target": "product", "look_offset": [0, 0, 0.08],
+                "keys": [{"t": 6.0, "az": 10, "dist": 1.0, "h": 0.98, "lens": 50},
+                         {"t": 8.2, "az": 6, "dist": 0.65, "h": 0.9, "lens": 50},
+                         {"t": 9.0, "az": 5, "dist": 0.62, "h": 0.9, "lens": 50}]}}
+  ]
+}
