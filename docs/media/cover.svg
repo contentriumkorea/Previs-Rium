@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 420" role="img" aria-labelledby="title desc">
+  <title id="title">Previs Rium</title>
+  <desc id="desc">Three viewfinders follow a purple performer and a magenta prop across a storyboard.</desc>
+  <defs>
+    <linearGradient id="background" x2="100%" y2="100%">
+      <stop stop-color="#0C1324"/>
+      <stop offset="1" stop-color="#252343"/>
+    </linearGradient>
+    <linearGradient id="panel" x2="0%" y2="100%">
+      <stop stop-color="#343550"/>
+      <stop offset="1" stop-color="#1B1E32"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M0 24V0H24" fill="none" stroke="#A7B8EA" opacity=".10"/>
+    </pattern>
+    <g id="viewfinder">
+      <rect width="194" height="234" rx="16" fill="url(#panel)" stroke="#5C6389"/>
+      <rect x="8" y="8" width="178" height="218" rx="11" fill="url(#grid)"/>
+      <path d="M20 50V28h22m110 0h22v22m0 134v22h-22m-110 0H20v-22" fill="none" stroke="#C7D0EB" stroke-width="2" opacity=".7"/>
+      <path d="M15 166h164m-160 41 77-42 79 42m-99 0 20-42 22 42" fill="none" stroke="#7180AD" opacity=".6"/>
+    </g>
+    <g id="performer">
+      <path d="M-24 8l23-10 25 11-1 47-24 10-23-11z" fill="#5B3CD4"/>
+      <path d="M-24 8l23-10 25 11-25 11z" fill="#B29AFF"/>
+      <path d="M-1 20l25-11-1 47-24 10z" fill="#8666EF"/>
+      <path d="M-16-18l15-7 17 8-1 19-16 7-15-7z" fill="#9B7DFF"/>
+      <path d="M-16-18l15-7 17 8-17 7z" fill="#D2BAFF"/>
+    </g>
+    <g id="prop">
+      <path d="M-11 0 1-6l12 6v24L1 30l-12-6z" fill="#C63987"/>
+      <path d="M-11 0 1-6l12 6L1 6z" fill="#FFA1D3"/>
+      <path d="M1 6l12-6v24L1 30z" fill="#F271B5"/>
+    </g>
+  </defs>
+  <rect width="1440" height="420" rx="24" fill="url(#background)"/>
+  <path d="M635 0h805v420H430z" fill="#34385A" opacity=".18"/>
+  <path d="M642 51h715v320H642" stroke="#8391BC" stroke-width="1" fill="none" opacity=".28"/>
+  <rect x="70" y="64" width="34" height="5" rx="2.5" fill="#75E6CD"/>
+  <text x="115" y="72" fill="#9CECDC" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="650" letter-spacing="3">CODEX SKILL</text>
+  <text x="66" y="209" fill="#F7F8FF" font-family="Segoe UI, Arial, sans-serif" font-size="106" font-weight="750" letter-spacing="-5">Previs</text>
+  <text x="66" y="307" fill="#C0ABFF" font-family="Segoe UI, Arial, sans-serif" font-size="106" font-weight="750" letter-spacing="-5">Rium</text>
+  <text x="73" y="366" fill="#D5DAEB" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="500">Reference video to Blender previs</text>
+  <use href="#viewfinder" x="667" y="88"/>
+  <use href="#viewfinder" x="883" y="88"/>
+  <use href="#viewfinder" x="1099" y="88"/>
+  <g transform="translate(727 192) scale(.91)"><use href="#performer"/></g>
+  <g transform="translate(767 222) scale(.75)"><use href="#prop"/></g>
+  <g transform="translate(974 187) scale(1.08)"><use href="#performer"/></g>
+  <g transform="translate(1019 219)"><use href="#prop"/></g>
+  <g transform="translate(1208 170) scale(1.32)"><use href="#performer"/></g>
+  <g transform="translate(1259 209) scale(1.16)"><use href="#prop"/></g>
+  <path d="M708 354h543" fill="none" stroke="#74E6CC" stroke-width="2" opacity=".5"/>
+  <path d="m1239 343 14 11-14 11" fill="none" stroke="#74E6CC" stroke-width="2"/>
+  <g fill="#74E6CC">
+    <circle cx="759" cy="354" r="5"/><circle cx="975" cy="354" r="5"/><circle cx="1191" cy="354" r="5"/>
+  </g>
+</svg>

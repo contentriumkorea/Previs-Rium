@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 52">
+  <title>설치 ZIP 다운로드</title>
+  <rect width="260" height="52" rx="12" fill="#4730A5"/>
+  <path d="M26 14v15m-6-6 6 6 6-6m-13 8v5h14v-5" fill="none" stroke="#B7F8E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="50" y="33" font-family="Segoe UI, Malgun Gothic, Noto Sans KR, sans-serif" font-size="17" font-weight="650" fill="#FFFFFF">설치 ZIP 다운로드</text>
+</svg>

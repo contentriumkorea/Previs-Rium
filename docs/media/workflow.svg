@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1056 338" role="img" aria-labelledby="title desc">
+  <title id="title">Previs Rium 작업 흐름</title>
+  <desc id="desc">원본 영상과 참조 이미지, Blender 카메라와 컷, MP4와 씨댄스 프롬프트의 세 단계.</desc>
+  <rect width="1056" height="338" rx="18" fill="#131A2D"/>
+  <g stroke="#495474" fill="#1A2239">
+    <rect x="28" y="29" width="300" height="280" rx="15"/>
+    <rect x="378" y="29" width="300" height="280" rx="15"/>
+    <rect x="728" y="29" width="300" height="280" rx="15"/>
+  </g>
+  <g fill="none" stroke="#77E8CB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M342 169h23m-7-7 7 7-7 7"/>
+    <path d="M692 169h23m-7-7 7 7-7 7"/>
+  </g>
+  <g fill="none" stroke="#7A91C8" stroke-width="2">
+    <rect x="66" y="59" width="150" height="133" rx="11"/>
+    <path d="M84 84V74h12m91 0h11v10m0 83v10h-11m-91 0H84v-10"/>
+    <rect x="197" y="97" width="85" height="85" rx="9" fill="#242D49"/>
+    <path d="m208 164 22-22 18 16 12-17 13 13"/>
+    <circle cx="224" cy="122" r="7"/>
+  </g>
+  <path d="m121 108 36 18-36 19z" fill="#77E8CB"/>
+  <g fill="none" stroke="#7A91C8" stroke-width="2">
+    <path d="M445 170h167m-155 19 72-44 71 44m-86 0 15-44 16 44"/>
+    <path d="M443 112V91h22m126 0h22v21m0 48v21h-22m-126 0h-22v-21"/>
+    <path d="M477 192c14-21 77-25 117-13" stroke="#77E8CB" stroke-dasharray="4 6"/>
+  </g>
+  <path d="m496 114 25-10 26 10v44l-26 12-25-12z" fill="#8B64EE"/>
+  <path d="m496 114 25-10 26 10-26 10z" fill="#C5B0FF"/>
+  <path d="m512 89 9-5 12 5v16l-12 4-9-4z" fill="#C5B0FF"/>
+  <path d="m555 134 12-5 12 5v23l-12 5-12-5z" fill="#EF73B3"/>
+  <g fill="none" stroke="#7A91C8" stroke-width="2">
+    <rect x="761" y="72" width="119" height="107" rx="11"/>
+    <path d="M778 157h84"/>
+    <rect x="900" y="67" width="90" height="118" rx="9"/>
+    <path d="M917 93h56m-56 14h44m-44 14h56m-56 14h39m-39 14h51"/>
+  </g>
+  <path d="m800 104 32 16-32 16z" fill="#77E8CB"/>
+  <g font-family="Segoe UI, Malgun Gothic, Noto Sans KR, sans-serif" fill="#F2F4FF">
+    <text x="56" y="239" font-size="26" font-weight="700">원본과 참조 이미지</text>
+    <text x="406" y="239" font-size="26" font-weight="700">Blender 프리비즈</text>
+    <text x="756" y="239" font-size="26" font-weight="700">MP4와 프롬프트</text>
+  </g>
+  <g font-family="Segoe UI, Malgun Gothic, Noto Sans KR, sans-serif" fill="#AFC0E0" font-size="17">
+    <text x="56" y="273">컷과 대표 프레임을 읽습니다.</text>
+    <text x="406" y="273">구도와 동선을 재현합니다.</text>
+    <text x="756" y="273">비교 영상과 프롬프트를 전달</text>
+  </g>
+</svg>
